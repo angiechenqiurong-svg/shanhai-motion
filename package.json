@@ -1,0 +1,33 @@
+{
+  "name": "shanhai-motion",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Six reusable Remotion shots and a live motion gallery",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "studio": "remotion studio remotion.ts",
+    "test": "node --experimental-strip-types --test motion.test.ts",
+    "render": "remotion render remotion.ts TravelSequence out/travel.mp4"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.533",
+    "@remotion/cli": "4.0.533",
+    "@remotion/player": "4.0.533",
+    "@remotion/renderer": "4.0.533",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.533"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.0",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.1.2",
+    "typescript": "5.9.3",
+    "vite": "8.3.3"
+  }
+}
