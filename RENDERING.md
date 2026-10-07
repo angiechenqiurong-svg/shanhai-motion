@@ -15,7 +15,7 @@ node render-frames.mjs CardStage
 FFMPEG=/path/to/ffmpeg node render-frames.mjs TravelSequence
 ```
 
-默认输出到 `out/TravelSequence.mp4`，画幅 1920×1080、30 fps、H.264。所有镜头当前均无音乐轨。通过 `Root.tsx` 的默认参数修改画面内容与速度。
+默认输出到 `out/TravelSequence.mp4`，画幅 1920×1080、30 fps、H.264。所有镜头当前均无音乐轨。通过 `src/Root.tsx` 的默认参数或 Studio 修改画面内容与速度。
 
 检查关键帧而不导出完整视频：
 

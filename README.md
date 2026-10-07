@@ -19,7 +19,7 @@
 
 ## 本地运行
 
-需要 Node.js 22.12+（或 20.19+），建议 Node.js 24。
+需要 Node.js 22.12+，建议 Node.js 24。
 
 ```bash
 npm ci
@@ -30,6 +30,8 @@ npm test          # 布局覆盖、时间边界、速度与确定性检查
 ```
 
 网页支持镜头选择、循环播放、拖动时间、16:9 / 4:3、主标题、副标题、强调色、速度、拼屏间距、散落种子、最多六张本地图片替换、复制组件代码与下载 JSON 预设。本地图片只在当前浏览器中使用，不会上传；JSON 预设保存文字及参数，素材需要另行放入视频项目。
+
+Studio 的六个镜头在 `src/Root.tsx` 中逐一注册，可以在右侧编辑文字和参数并保存到源码；也可通过 JSON 模式设置图片 URL 数组。
 
 ## 使用镜头
 
@@ -94,6 +96,7 @@ npx remotion render remotion.ts CirclePortal out/circle.mp4
 | `math.ts` | 时间、插值、布局、确定性随机与时长 |
 | `scenery.tsx` | 可替换的原创 SVG 风景 |
 | `gallery.tsx` / `styles.css` | 可视化参数网页 |
+| `src/Root.tsx` | 六个可在 Studio 编辑和保存参数的 Composition |
 | `Root.tsx` / `remotion.ts` | Studio 与导出入口 |
 | `docs/` | GitHub Pages 静态发布文件 |
 
